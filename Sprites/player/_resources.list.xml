@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="jingzhi" type="GROUP"/>
+  <resource name="剑" type="GROUP"/>
+  <resource name="dead" type="GROUP"/>
+  <resource name="技能" type="GROUP"/>
+  <resource name="头像" type="GROUP"/>
+  <resource name="魔法弹" type="GROUP"/>
+</resources>

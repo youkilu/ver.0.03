@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sprite>
+  <origin x="29" y="33"/>
+  <mask>
+    <separate>false</separate>
+    <shape>DIAMOND</shape>
+    <bounds alphaTolerance="0" mode="MANUAL">
+      <left>7</left>
+      <right>55</right>
+      <top>6</top>
+      <bottom>62</bottom>
+    </bounds>
+  </mask>
+  <preload>true</preload>
+  <smoothEdges>false</smoothEdges>
+  <transparent>false</transparent>
+</sprite>

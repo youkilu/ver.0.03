@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">var U, D, L, R, S;
+U = keyboard_check(vk_up);
+D = keyboard_check(vk_down);
+L = keyboard_check(vk_left);
+R = keyboard_check(vk_right);
+S = keyboard_check(vk_space)
+//5是速度，实际使用时应换掉
+vspeed = 13 * (D - U);
+hspeed = 14 * (R - L);
+vspeed /= sqrt((vspeed != 0) + (hspeed != 0));
+hspeed /= sqrt((vspeed != 0) + (hspeed != 0));
+if(!attacking){
+if(U == D &amp;&amp; L == R)
+{
+   if(sprite_index = up3)
+        sprite_index = sprite26;
+    else if(sprite_index = left2)
+        sprite_index = sprite28;
+    else if(sprite_index =right2 )
+        sprite_index = sprite24;
+    else if(sprite_index = down2)
+        sprite_index = sprite30;
+    else if(sprite_index = upleft1)
+        sprite_index = sprite28;
+    else if(sprite_index =downleft1 )
+        sprite_index = sprite28;
+    else if(sprite_index = upright1)
+        sprite_index = sprite24;
+    else if(sprite_index = downright1)
+    sprite_index = sprite24;
+    
+}
+
+else if(U &amp;&amp; !D &amp;&amp; L == R)
+    sprite_index = up3;
+else if(D &amp;&amp; !U &amp;&amp; L == R)
+    sprite_index = down2;
+else if(L &amp;&amp; !R &amp;&amp; U == D)
+    sprite_index = left2;
+else if(R &amp;&amp; !L &amp;&amp; U == D)
+    sprite_index = right2;
+else if(L &amp;&amp; U &amp;&amp; !R &amp;&amp; !D)
+    sprite_index = upleft1;
+else if(L &amp;&amp; D &amp;&amp; !R &amp;&amp; !U)
+    sprite_index = downleft1;
+else if(R &amp;&amp; U &amp;&amp; !L &amp;&amp; !D)
+    sprite_index = upright1;
+else if(R &amp;&amp; D &amp;&amp; !L &amp;&amp; !U)
+    sprite_index = downright1;
+    
+    }
+if(!place_free(x + hspeed, y))
+{
+if(hspeed &lt;= 0)
+move_contact_solid(180,abs(hspeed));
+if(hspeed &gt; 0)
+move_contact_solid(0,abs(hspeed));
+hspeed = 0;
+}
+if(!place_free(x, y + vspeed))
+{
+if(vspeed &lt;= 0)
+move_contact_solid(90,abs(vspeed));
+if(vspeed &gt; 0)
+move_contact_solid(270,abs(vspeed));
+vspeed = 0;
+}
+if(!place_free(x + hspeed, y + vspeed))
+hspeed = 0;
+ 
+if(nowHp &lt;= 0){
+vspeed = 0 * (D - U);
+hspeed = 0 * (R - L);
+sprite_index = sprite359
+with(baoqi)instance_destroy()
+with(object178)instance_destroy()
+instance_create(x,y,object327)
+}  
+    
+  
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.8
+with(mzuo)instance_destroy()
+with(myou)instance_destroy()
+with(mshang)instance_destroy()
+with(mxia)instance_destroy()
+with(mzuoshang)instance_destroy()
+with(myouxia)instance_destroy()
+with(myoushang)instance_destroy()
+with(mzuoxia)instance_destroy()
+with(object350)instance_destroy()
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">x=player.x
+y=player.y
+player.nowBp-=0.15
+player.shadow = 1
+depth=player.depth
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

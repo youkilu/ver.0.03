@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(player.sprite_index = left2){
+    alarm[1] = 50}
+if(player.sprite_index = right2){
+    alarm[1] = 50}
+if(player.sprite_index = up3){
+    alarm[1] = 50}
+if(player.sprite_index = down2){
+    alarm[1] = 50}
+if(!inv_time){
+inv_time = 1
+alarm[0] = 20
+if(player.sprite_index = right2&amp;&amp;x&gt;player.x+32)
+{if(player.nowsta=10){nowhp-=1}
+if(player.nowsta&gt;10&amp;&amp;player.nowsta&lt;=15){nowhp-=5}
+if(player.nowsta&gt;15){nowhp-=nowhp}}
+if(player.sprite_index = left2&amp;&amp;x&lt;player.x-32)
+{if(player.nowsta=10){nowhp-=1}
+if(player.nowsta&gt;10&amp;&amp;player.nowsta&lt;=15){nowhp-=5}
+if(player.nowsta&gt;15){nowhp-=nowhp}}
+if(player.sprite_index = down2&amp;&amp;y+55&gt;=player.y-37)
+{if(player.nowsta=10){nowhp-=1}
+if(player.nowsta&gt;10&amp;&amp;player.nowsta&lt;=15){nowhp-=5}
+if(player.nowsta&gt;15){nowhp-=nowhp}}
+if(player.sprite_index = up3&amp;&amp;y+55&gt;=player.y-37)
+{if(player.nowsta=10){nowhp-=1}
+if(player.nowsta&gt;10&amp;&amp;player.nowsta&lt;=15){nowhp-=5}
+if(player.nowsta&gt;15){nowhp-=nowhp}}
+if(nowhp = 0){
+with(object272)instance_destroy()
+with(object333)instance_destroy()
+instance_destroy()
+instance_create(x,y,object243)
+if(player.nowlv&lt;=1){
+player.nowexp+=1}
+if(player.nowlv&gt;1){
+player.nowexp+=0}
+player.alarm[2] = 1
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

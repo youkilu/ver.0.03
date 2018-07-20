@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="splitobject" type="RESOURCE"/>
+  <resource name="script3" type="RESOURCE"/>
+  <resource name="killplayer" type="RESOURCE"/>
+  <resource name="script4" type="RESOURCE"/>
+</resources>

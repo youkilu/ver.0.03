@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">while(sum&lt;=24 - nowHp){
+if(nowHp = 0)break
+inst = instance_create(xx[sum + 1],yy[sum + 1],object10);
+sum += 1
+switch(25 - sum)
+{
+case 24:
+ case 21:
+ case 19:
+ case 17:
+ case 15:
+ case 13:
+ case 11:
+ case 9:
+ case 7:
+ case 5:
+ case 3:
+ case 1:
+obj = instance_create(x,y,object23);
+ break;
+ case 23:
+ case 22:
+ case 20:
+ case 18:
+ case 16:
+ case 14:
+ case 12:
+ case 10:
+ case 8:
+ case 6:
+ case 4:
+ case 2:
+obj = instance_create(x,y,object11);
+}
+with(obj)move_towards_point(other.inst.x,other.inst.y,17)
+with(obj)image_angle = direction+90}
+
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">var U, D, L, R, S;
+U = keyboard_check(vk_up);
+D = keyboard_check(vk_down);
+L = keyboard_check(vk_left);
+R = keyboard_check(vk_right);
+S = keyboard_check(vk_space)
+//5是速度，实际使用时应换掉
+vspeed = 12 * (D - U);
+hspeed = 15 * (R - L);
+vspeed /= sqrt((vspeed != 0) + (hspeed != 0));
+hspeed /= sqrt((vspeed != 0) + (hspeed != 0));
+if(!attacking){
+if(U == D &amp;&amp; L == R)
+{
+    if(sprite_index = up3)
+        sprite_index = sprite26;
+    else if(sprite_index = left2)
+        sprite_index = sprite28;
+    else if(sprite_index =right2 )
+        sprite_index = sprite24;
+    else if(sprite_index = down2)
+        sprite_index = sprite30;
+   
+    
+}
+
+else if(U &amp;&amp; !D &amp;&amp; L == R)
+    sprite_index = up3;
+else if(D &amp;&amp; !U &amp;&amp; L == R)
+    sprite_index = down2;
+else if(L &amp;&amp; !R &amp;&amp; U == D)
+    sprite_index = left2;
+else if(R &amp;&amp; !L &amp;&amp; U == D)
+    sprite_index = right2;
+else if(L &amp;&amp; U &amp;&amp; !R &amp;&amp; !D)
+    sprite_index = left2;
+else if(L &amp;&amp; D &amp;&amp; !R &amp;&amp; !U)
+    sprite_index = left2;
+else if(R &amp;&amp; U &amp;&amp; !L &amp;&amp; !D)
+    sprite_index = right2;
+else if(R &amp;&amp; D &amp;&amp; !L &amp;&amp; !U)
+    sprite_index = right2;
+    }
+
+else{
+if(U &amp;&amp; !D &amp;&amp; L == R)
+    sprite_index = up2;
+else if(D &amp;&amp; !U &amp;&amp; L == R)
+    sprite_index = downa;
+else if(L &amp;&amp; !R &amp;&amp; U == D)
+    sprite_index = lefta;
+else if(R &amp;&amp; !L &amp;&amp; U == D)
+    sprite_index = righta;
+else if(L &amp;&amp; U &amp;&amp; !R &amp;&amp; !D)
+    sprite_index = uplefta;
+else if(L &amp;&amp; D &amp;&amp; !R &amp;&amp; !U)
+    sprite_index = downlefea;
+else if(R &amp;&amp; U &amp;&amp; !L &amp;&amp; !D)
+    sprite_index = uprighta;
+else if(R &amp;&amp; D &amp;&amp; !L &amp;&amp; !U)
+    sprite_index = downrighta;
+    }
+
+if(!place_free(x + hspeed, y))
+{
+if(hspeed &lt;= 0)
+move_contact_solid(180,abs(hspeed));
+if(hspeed &gt; 0)
+move_contact_solid(0,abs(hspeed));
+hspeed = 0;
+}
+if(!place_free(x, y + vspeed))
+{
+if(vspeed &lt;= 0)
+move_contact_solid(90,abs(vspeed));
+if(vspeed &gt; 0)
+move_contact_solid(270,abs(vspeed));
+vspeed = 0;
+}
+if(!place_free(x + hspeed, y + vspeed))
+hspeed = 0;
+ 
+if(nowHp &lt;= 0){
+vspeed = 0 * (D - U);
+hspeed = 0 * (R - L);
+sprite_index = sprite359
+with(baoqi)instance_destroy()
+with(object178)instance_destroy()
+instance_create(x,y,object327)
+}   
+    
+  
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.8
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

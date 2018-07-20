@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="right2" type="RESOURCE"/>
+  <resource name="downright1" type="RESOURCE"/>
+  <resource name="upright1" type="RESOURCE"/>
+  <resource name="up3" type="RESOURCE"/>
+  <resource name="left2" type="RESOURCE"/>
+  <resource name="upleft1" type="RESOURCE"/>
+  <resource name="downleft1" type="RESOURCE"/>
+  <resource name="down2" type="RESOURCE"/>
+</resources>

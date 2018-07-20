@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(!inv_time){
+inv_time = 1
+alarm[0] = 25
+if(player.sprite_index = righta&amp;&amp;x&gt;player.x+16)
+{nowHp -=1
+}
+if(player.sprite_index = lefta&amp;&amp;x&lt;player.x+16)
+{nowHp -=1
+}
+if(player.sprite_index = uprighta&amp;&amp;x&gt;player.x+8&amp;&amp;y&lt;player.y-32)
+{nowHp -=1
+}
+if(player.sprite_index = uplefta&amp;&amp;x&lt;player.x+8&amp;&amp;y&lt;player.y-32)
+{nowHp -=1
+}
+if(player.sprite_index = up2&amp;&amp;y&lt;player.y-32)
+{nowHp -=1
+}
+if(player.sprite_index = downa&amp;&amp;y&gt;=player.y)
+{nowHp -=1
+}
+if(player.sprite_index = downrighta&amp;&amp;x&gt;player.x+8&amp;&amp;y&gt;=player.y)
+{nowHp -=1
+}
+if(player.sprite_index = x&lt;player.x+8&amp;&amp;y&gt;=player.y)
+{nowHp -=1
+}}
+if(nowHp&lt;10&amp;&amp;nowHp&gt;=9){
+repeat(1)instance_create(440,555,object180)
+
+
+
+if(nowHp = 0){
+instance_create(x,y,sd)
+with(hpbar)instance_destroy()
+with(object7)instance_destroy()
+with(object8)instance_destroy()
+with(object9)instance_destroy()
+with(object10)instance_destroy()
+with(object11)instance_destroy()
+with(object12)instance_destroy()
+with(object13)instance_destroy()
+with(object14)instance_destroy()
+with(object15)instance_destroy()
+with(object16)instance_destroy()
+with(object17)instance_destroy()
+with(object18)instance_destroy()
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

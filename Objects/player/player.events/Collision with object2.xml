@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="object2">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//暻偲偺徴撍敾掕
+
+//慜屻偵暻偑偁傞帪
+if(place_free(x+hspeed,y) == false){
+  if(hspeed &lt;= 0){//嵍
+    move_contact_solid(180,abs(hspeed));
+  }
+  if(hspeed &gt; 0){//塃
+    move_contact_solid(0,abs(hspeed));
+  }
+  hspeed = 0;
+}
+
+//忋壓偵暻偑偁傞帪  
+if(place_free(x,y+vspeed) == false){
+  if(vspeed &lt;= 0){//忋
+    move_contact_solid(90,abs(vspeed));
+  }
+  if(vspeed &gt; 0){//壓
+    move_contact_solid(270,abs(vspeed));
+    djump=1;
+  }
+  vspeed = 0;
+  gravity=0
+}
+
+//幬傔偺埵抲偵暻偑偁傞帪
+if (place_free(x+hspeed,y+vspeed) == false){
+  hspeed=0;
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

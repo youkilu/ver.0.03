@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(place_meeting(x,y,object307)){
+nowHp-=0
+if(secretboss.nowHp&lt;=24){
+secretboss.nowHp+=1}
+else{secretboss.nowHp+=0}
+with(object14.id)instance_destroy()}
+else{if(nowHp&lt;=12.5){nowHp-=nowHp}
+else{nowHp-=player.maxHp/8}
+
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

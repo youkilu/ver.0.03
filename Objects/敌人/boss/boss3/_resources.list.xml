@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="boss3" type="RESOURCE"/>
+  <resource name="技能1" type="GROUP"/>
+  <resource name="yingz1" type="RESOURCE"/>
+  <resource name="object436" type="RESOURCE"/>
+  <resource name="object437" type="RESOURCE"/>
+  <resource name="object438" type="RESOURCE"/>
+  <resource name="hpbar4" type="RESOURCE"/>
+  <resource name="hpbar4d" type="RESOURCE"/>
+</resources>

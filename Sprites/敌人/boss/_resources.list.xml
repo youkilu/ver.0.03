@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="隐藏boss" type="GROUP"/>
+  <resource name="boss1" type="GROUP"/>
+  <resource name="fboss" type="GROUP"/>
+  <resource name="boss2" type="GROUP"/>
+  <resource name="boss4" type="GROUP"/>
+  <resource name="boss3" type="GROUP"/>
+  <resource name="boss5" type="GROUP"/>
+</resources>

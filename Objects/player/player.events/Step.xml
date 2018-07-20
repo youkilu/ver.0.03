@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if( sprite_index = up3){
+with(step4)instance_destroy()
+with(step2)instance_destroy()
+instance_create(x,y,step1)}
+if( sprite_index = right2){
+with(step4)instance_destroy()
+with(step2)instance_destroy()
+instance_create(x,y,step1)}
+if( sprite_index = left2){
+with(step4)instance_destroy()
+with(step2)instance_destroy()
+instance_create(x,y,step1)}
+if( sprite_index = down2){
+with(step4)instance_destroy()
+with(step2)instance_destroy()
+instance_create(x,y,step1)}
+if( sprite_index = sprite24){
+with(step3)instance_destroy()
+with(step4)instance_destroy()
+with(step1)instance_destroy()
+with(step2)instance_destroy()}
+if(sprite_index = sprite26){
+with(step3)instance_destroy()
+with(step4)instance_destroy()
+with(step1)instance_destroy()
+with(step2)instance_destroy()}
+if(sprite_index = sprite28){
+with(step3)instance_destroy()
+with(step4)instance_destroy()
+with(step1)instance_destroy()
+with(step2)instance_destroy()}
+if(sprite_index = sprite30){
+with(step3)instance_destroy()
+with(step4)instance_destroy()
+with(step1)instance_destroy()
+with(step2)instance_destroy()}
+
+
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(shadow == 1){ //如果我们启用了拖影效果
+    shadow_timer += 1; //拖影计时器每步增加1
+    if(shadow_timer == 3){ //每5步创建一个影子的obj，这个数值可以自行调整
+        a=instance_create(x,y,objShadow);
+        a.sprite_index=sprite_index;
+        a.image_index=image_index;
+        a.image_speed=image_speed;
+        a.image_xscale=image_xscale;
+        a.image_yscale=image_yscale;
+        a.image_alpha=image_alpha;
+        a.image_angle=image_angle;
+        a.image_blend=image_blend; //影子obj继承当前obj的所有绘制属性
+        a.depth=depth+1; //影子应该位于当前obj的后方
+        shadow_timer=0; //重设拖影计时器
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">var U, D, L, R, C, Z;
+U = keyboard_check(vk_up);
+D = keyboard_check(vk_down);
+L = keyboard_check(vk_left);
+R = keyboard_check(vk_right);
+C = keyboard_check(ord('C'));
+Z = keyboard_check(ord('Z'))
+//5是速度，实际使用时应换掉
+vspeed = 8 * (D - U);
+hspeed = 9 * (R - L);
+if(!attacking){
+if(U == D &amp;&amp; L == R)
+{
+   if(sprite_index = up3)
+        sprite_index = sprite26;
+    else if(sprite_index = left2)
+        sprite_index = sprite28;
+    else if(sprite_index =right2 )
+        sprite_index = sprite24;
+    else if(sprite_index = down2)
+        sprite_index = sprite30;
+    else if(sprite_index = upleft1)
+        sprite_index = sprite28;
+    else if(sprite_index =downleft1 )
+        sprite_index = sprite28;
+    else if(sprite_index = upright1)
+        sprite_index = sprite24;
+    else if(sprite_index = downright1)
+    sprite_index = sprite24;
+    
+}
+
+else if(U &amp;&amp; !D &amp;&amp; L == R)
+    sprite_index = up3;
+else if(D &amp;&amp; !U &amp;&amp; L == R)
+    sprite_index = down2;
+else if(L &amp;&amp; !R &amp;&amp; U == D)
+    sprite_index = left2;
+else if(R &amp;&amp; !L &amp;&amp; U == D)
+    sprite_index = right2;
+else if(L &amp;&amp; U &amp;&amp; !R &amp;&amp; !D)
+    sprite_index = upleft1;
+else if(L &amp;&amp; D &amp;&amp; !R &amp;&amp; !U)
+    sprite_index = downleft1;
+else if(R &amp;&amp; U &amp;&amp; !L &amp;&amp; !D)
+    sprite_index = upright1;
+else if(R &amp;&amp; D &amp;&amp; !L &amp;&amp; !U)
+    sprite_index = downright1;
+    
+    }
+if(!place_free(x + hspeed, y))
+{
+if(hspeed &lt;= 0)
+move_contact_solid(180,abs(hspeed));
+if(hspeed &gt; 0)
+move_contact_solid(0,abs(hspeed));
+hspeed = 0;
+}
+if(!place_free(x, y + vspeed))
+{
+if(vspeed &lt;= 0)
+move_contact_solid(90,abs(vspeed));
+if(vspeed &gt; 0)
+move_contact_solid(270,abs(vspeed));
+vspeed = 0;
+}
+if(!place_free(x + hspeed, y + vspeed))
+hspeed = 0;
+ 
+if(nowHp &lt;= 0){
+vspeed = 0 * (D - U);
+hspeed = 0 * (R - L);
+sprite_index = sprite368
+with(baoqi)instance_destroy()
+with(object178)instance_destroy()
+with(yingz)instance_destroy()
+alarm[6]=1
+}
+if(nowBp&gt;=100){
+alarm[2] = 0}
+if(!instance_exists(baoqi)){
+image_speed = 0.4}
+if(nowBp&lt;=1){
+with(baoqi)instance_destroy()
+}
+if(nowBp&lt;=5){
+shadow = 0
+with(step3)instance_destroy()
+sound_stop(sound14)
+sound_stop(sound15)}
+
+if(nowmp&lt;6){
+nowmp-=0
+alarm[1] = 0}
+if(nowmp&lt;30){
+nowmp-=0
+alarm[4] = 0
+}
+if(nowmp&lt;20){
+alarm[5] = 0
+}
+
+if(alarm[1] = 5){
+alarm[4] = 0}
+if(alarm[4] = 4){
+alarm[1] = 0}
+
+
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(!instance_exists(erduan)){
+sound_stop(sdi)}
+
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">depth = room_height*10 - bbox_bottom*10
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

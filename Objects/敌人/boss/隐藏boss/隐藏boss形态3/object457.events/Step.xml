@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">var U, D, L, R;
+U = keyboard_check(ord('W'));
+D = keyboard_check(ord('S'));
+L = keyboard_check(ord('A'));
+R = keyboard_check(ord('D'));
+//5是速度，实际使用时应换掉
+vspeed = 6 * (D - U);
+hspeed = 8 * (R - L);
+depth = player.depth+101
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">{
+        draw_set_color(color_full);  //设置绘制颜色为满血时候的颜色
+        draw_rectangle(1,8,1+32*39.5,24,0); //用满血时候的颜色绘制血条
+        draw_rectangle(1,8,1+32*39.5,24,0); //用空血时候的颜色绘制血条
+    
+    draw_set_alpha(1); //还原正常绘制不透明度
+    draw_set_color(c_black); //还原正常绘制颜色
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

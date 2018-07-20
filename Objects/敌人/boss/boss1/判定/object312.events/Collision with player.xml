@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(!inv_time){
+inv_time = 1
+alarm[0] = 20
+if(player.sprite_index = up2)
+{if(player.nowsta&lt;30){object299.nowhp-=0
+sound_play(pengz)}
+if(player.nowsta&gt;=30&amp;&amp;player.nowsta&lt;=35){object299.nowhp-=1
+sound_play(ks)}
+if(player.nowsta&gt;35&amp;&amp;player.nowsta&lt;=40){object299.nowhp-=3
+sound_play(ks)}
+if(player.nowsta&gt;40&amp;&amp;player.nowsta&lt;=45){object299.nowhp-=10
+sound_play(ks)}
+if(player.nowsta&gt;45&amp;&amp;player.nowsta&lt;=50){object299.nowhp-=40
+sound_play(ks)}
+if(player.nowsta&gt;50){object299.nowhp-=60
+sound_play(ks)}}
+if(object299.nowhp=25){
+instance_create(x,y,object309)}
+if(object299.nowhp=20){
+instance_create(x,y,object309)
+repeat(3)instance_create(random(1280),random(720),object318)
+repeat(3)instance_create(random(1280),random(720),object319)}
+if(object299.nowhp=16){
+instance_create(x,y,object309)
+repeat(3)instance_create(random(1280),random(720),object318)
+repeat(3)instance_create(random(1280),random(720),object319)}
+if(object299.nowhp=10){
+}
+if(object299.nowhp = 0){
+instance_destroy()
+sound_stop_all()
+with(object312)instance_destroy()
+with(object309)instance_destroy()
+with(object236)instance_destroy()
+if(player.nowlv&lt;=5){
+player.nowexp+=60}
+if(player.nowlv&gt;5){
+player.nowexp+=60}
+player.alarm[2] = 1
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="魔法弹1" type="GROUP"/>
+  <resource name="sprite453" type="RESOURCE"/>
+  <resource name="sprite454" type="RESOURCE"/>
+  <resource name="sprite455" type="RESOURCE"/>
+  <resource name="sprite456" type="RESOURCE"/>
+  <resource name="sprite461" type="RESOURCE"/>
+  <resource name="sprite462" type="RESOURCE"/>
+  <resource name="静止" type="GROUP"/>
+  <resource name="sprite473" type="RESOURCE"/>
+  <resource name="sprite493" type="RESOURCE"/>
+</resources>

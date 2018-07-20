@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="background1" type="RESOURCE"/>
+  <resource name="background2" type="RESOURCE"/>
+  <resource name="background4" type="RESOURCE"/>
+  <resource name="background5" type="RESOURCE"/>
+  <resource name="贴图" type="GROUP"/>
+  <resource name="BLOCK" type="GROUP"/>
+  <resource name="background13" type="RESOURCE"/>
+  <resource name="background14" type="RESOURCE"/>
+  <resource name="background15" type="RESOURCE"/>
+  <resource name="background21" type="RESOURCE"/>
+  <resource name="background22" type="RESOURCE"/>
+  <resource name="background23" type="RESOURCE"/>
+  <resource name="boss3" type="GROUP"/>
+  <resource name="background26" type="RESOURCE"/>
+</resources>

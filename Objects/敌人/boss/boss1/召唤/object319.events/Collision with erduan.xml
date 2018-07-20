@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="erduan">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(!inv_time){
+inv_time = 1
+alarm[0] = 1
+nowhp-=nowhp
+if(nowhp = 0){
+with(object250)instance_destroy()
+instance_destroy()
+instance_create(x,y,object243)
+player.nowexp+=1
+player.alarm[2] = 1
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

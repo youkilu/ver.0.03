@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="object174">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">nowhp-=2
+with(object174.id)instance_destroy()
+if(nowhp&lt;=101&amp;&amp;nowhp&gt;=99){
+instance_create(653,854,object422)
+}
+if(nowhp&lt;=100&amp;&amp;nowhp&gt;=85){
+instance_create(random(1280),random(1220),object418)}
+if(nowhp&lt;=85&amp;&amp;nowhp&gt;=70){
+instance_create(random(1280),random(1220),object418)}
+if(nowhp&lt;=70&amp;&amp;nowhp&gt;=60){
+instance_create(random(1280),random(1220),object418)}
+if(nowhp&lt;=0){
+player.nowexp+=130
+player.alarm[2]=1
+with(object410)instance_destroy()
+with(object411)instance_destroy()
+with(object412)instance_destroy()
+with(object413)instance_destroy()
+with(object422)instance_destroy()
+with(object423)instance_destroy()
+with(object424)instance_destroy()
+instance_destroy()}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

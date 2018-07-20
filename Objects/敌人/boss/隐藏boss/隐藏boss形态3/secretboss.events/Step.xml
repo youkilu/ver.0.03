@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">while(sum&lt;=24 - nowHp){
+if(nowHp &lt;= 0)break
+inst = instance_create(xx[sum + 1],yy[sum + 1],object460);
+sum += 1
+switch(25 - sum)
+{
+ case 24:
+ case 21:
+ case 19:
+ case 17:
+ case 15:
+ case 13:
+ case 11:
+ case 9:
+ case 7:
+ case 5:
+ case 3:
+ case 1:
+obj = instance_create(random(1280),random(1280),object470);
+ break;
+ case 23:
+ case 22:
+ case 20:
+ case 18:
+ case 16:
+ case 14:
+ case 12:
+ case 10:
+ case 8:
+ case 6:
+ case 4:
+ case 2:
+obj = instance_create(random(1280),random(1280),object11);
+}
+with(obj)move_towards_point(other.inst.x,other.inst.y,0)}
+if(nowHp &lt;= 0){
+sound_play(deadw)
+with(hpbar)instance_destroy()
+with(object7)instance_destroy()
+with(object8)instance_destroy()
+with(object10)instance_destroy()
+with(object11)instance_destroy()
+with(object12)instance_destroy()
+with(object13)instance_destroy()
+with(object14)instance_destroy()
+with(object17)instance_destroy()
+with(object18)instance_destroy()
+with(object445)instance_destroy()
+with(object470)instance_destroy()
+with(object460)instance_destroy()
+with(object462)instance_destroy()
+with(object469)instance_destroy()
+with(object31)instance_destroy()
+with(object14)instance_destroy()
+with(object17)instance_destroy()
+with(object18)instance_destroy()
+with(object445)instance_destroy()
+with(object461)instance_destroy()
+instance_destroy()
+}
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">depth = player.depth-3
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.8
+player.nowlv = 60
+player.nowsta = 400
+player.nowdef = 400
+player.nowexp = 33570
+player.nowBp=100
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>player</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(place_meeting(x,y,cbaoqi)){var U, D, L, R, S;
+U = keyboard_check(vk_up);
+D = keyboard_check(vk_down);
+L = keyboard_check(vk_left);
+R = keyboard_check(vk_right);
+S = keyboard_check(vk_space)
+//5是速度，实际使用时应换掉
+vspeed = 18 * (D - U);
+hspeed = 20 * (R - L);
+if(!attacking){
+if(U == D &amp;&amp; L == R)
+{
+   if(sprite_index = up3)
+        sprite_index = sprite26;
+    else if(sprite_index = left2)
+        sprite_index = sprite28;
+    else if(sprite_index =right2 )
+        sprite_index = sprite24;
+    else if(sprite_index = down2)
+        sprite_index = sprite30;
+    else if(sprite_index = upleft1)
+        sprite_index = sprite28;
+    else if(sprite_index =downleft1 )
+        sprite_index = sprite28;
+    else if(sprite_index = upright1)
+        sprite_index = sprite24;
+    else if(sprite_index = downright1)
+    sprite_index = sprite24;
+    
+}
+
+else if(U &amp;&amp; !D &amp;&amp; L == R)
+    sprite_index = up3;
+else if(D &amp;&amp; !U &amp;&amp; L == R)
+    sprite_index = down2;
+else if(L &amp;&amp; !R &amp;&amp; U == D)
+    sprite_index = left2;
+else if(R &amp;&amp; !L &amp;&amp; U == D)
+    sprite_index = right2;
+else if(L &amp;&amp; U &amp;&amp; !R &amp;&amp; !D)
+    sprite_index = upleft1;
+else if(L &amp;&amp; D &amp;&amp; !R &amp;&amp; !U)
+    sprite_index = downleft1;
+else if(R &amp;&amp; U &amp;&amp; !L &amp;&amp; !D)
+    sprite_index = upright1;
+else if(R &amp;&amp; D &amp;&amp; !L &amp;&amp; !U)
+    sprite_index = downright1;
+    
+    }
+
+if(!place_free(x + hspeed, y))
+{
+if(hspeed &lt;= 0)
+move_contact_solid(180,abs(hspeed));
+if(hspeed &gt; 0)
+move_contact_solid(0,abs(hspeed));
+hspeed = 0;
+}
+if(!place_free(x, y + vspeed))
+{
+if(vspeed &lt;= 0)
+move_contact_solid(90,abs(vspeed));
+if(vspeed &gt; 0)
+move_contact_solid(270,abs(vspeed));
+vspeed = 0;
+}
+if(!place_free(x + hspeed, y + vspeed))
+hspeed = 0;
+ 
+if(nowHp &lt;= 0){
+vspeed = 0 * (D - U);
+hspeed = 0 * (R - L);
+sprite_index = sprite368
+with(baoqi)instance_destroy()
+with(object178)instance_destroy()
+}   
+}    
+  
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(nowHp&gt;=25){alarm[6] = 0}
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(shadow == 1){ //如果我们启用了拖影效果
+    shadow_timer += 1; //拖影计时器每步增加1
+    if(shadow_timer == 3){ //每5步创建一个影子的obj，这个数值可以自行调整
+        a=instance_create(x,y,objShadow);
+        a.sprite_index=sprite_index;
+        a.image_index=image_index;
+        a.image_speed=image_speed;
+        a.image_xscale=image_xscale;
+        a.image_yscale=image_yscale;
+        a.image_alpha=image_alpha;
+        a.image_angle=image_angle;
+        a.image_blend=image_blend; //影子obj继承当前obj的所有绘制属性
+        a.depth=depth+1; //影子应该位于当前obj的后方
+        shadow_timer=0; //重设拖影计时器
+    }
+}
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

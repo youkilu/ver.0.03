@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">player.nowHp-=0.05
+if(sprite_index = sprite447){
+x = x+5
+sprite_index = sprite448
+direction+=180}
+else if(sprite_index = sprite448){
+x = x-5
+sprite_index = sprite447
+direction+=180}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

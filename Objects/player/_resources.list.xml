@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="player" type="RESOURCE"/>
+  <resource name="yinyue" type="RESOURCE"/>
+  <resource name="siwang" type="RESOURCE"/>
+  <resource name="object32" type="RESOURCE"/>
+  <resource name="hpbar1" type="RESOURCE"/>
+  <resource name="yingz" type="RESOURCE"/>
+  <resource name="hpbard" type="RESOURCE"/>
+  <resource name="技能" type="GROUP"/>
+  <resource name="音效" type="GROUP"/>
+  <resource name="特效" type="GROUP"/>
+  <resource name="object327" type="RESOURCE"/>
+  <resource name="魔法弹" type="GROUP"/>
+  <resource name="头像" type="GROUP"/>
+  <resource name="房间销毁" type="GROUP"/>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(sprite_index = up3){
+instance_create(x,y-48,object169)}
+if(sprite_index = upright1){
+instance_create(x,y-48,object170)}
+if(sprite_index = right2){
+instance_create(x,y-48,object171)}
+if(sprite_index = downright1){
+instance_create(x,y-48,object172)}
+if(sprite_index = down2){
+instance_create(x,y-48,object173)}
+if(sprite_index = downleft1){
+instance_create(x,y-48,object174)}
+if(sprite_index = left2){
+instance_create(x,y-48,object175)}
+if(sprite_index = upleft1){
+instance_create(x,y-48,object176)}
+if(sprite_index = sprite26){
+instance_create(x,y-48,object169)}
+if(sprite_index = sprite24){
+instance_create(x,y-48,object171)}
+if(sprite_index = sprite30){
+instance_create(x,y-48,object173)}
+if(sprite_index = sprite28){
+instance_create(x,y-48,object175)}
+
+
+
+
+
+
+
+
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

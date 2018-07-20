@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprite382" type="RESOURCE"/>
+  <resource name="sprite396" type="RESOURCE"/>
+  <resource name="sprite401" type="RESOURCE"/>
+  <resource name="sprite424" type="RESOURCE"/>
+  <resource name="boom" type="GROUP"/>
+  <resource name="sprite491" type="RESOURCE"/>
+  <resource name="sprite492" type="RESOURCE"/>
+</resources>

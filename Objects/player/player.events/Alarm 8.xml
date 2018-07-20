@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="8">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(sprite_index = up3){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mshang)}
+if(sprite_index = upright1){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,myoushang)}
+if(sprite_index = right2){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,myou)}
+if(sprite_index = downright1){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,myouxia)}
+if(sprite_index = down2){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mxia)}
+if(sprite_index = downleft1){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mzuoxia)}
+if(sprite_index = left2){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mzuo)}
+if(sprite_index = upleft1){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mzuoshang)}
+if(sprite_index = sprite26){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mshang)}
+if(sprite_index = sprite24){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,myou)}
+if(sprite_index = sprite30){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mxia)}
+if(sprite_index = sprite28){
+instance_create(x,y-48,object350)
+instance_create(x,y-48,mzuo)}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

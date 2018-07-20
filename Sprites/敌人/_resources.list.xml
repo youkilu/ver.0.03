@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="敌人1" type="GROUP"/>
+  <resource name="敌人2" type="GROUP"/>
+  <resource name="boss" type="GROUP"/>
+  <resource name="敌人3" type="GROUP"/>
+</resources>

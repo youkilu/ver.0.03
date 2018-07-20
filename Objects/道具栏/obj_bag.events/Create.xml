@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">bag_w = 5
+bag_h = 10
+bag_on = 0
+
+var i,j;
+for(i=0;i&lt;bag_w;i+=1)
+for(j=0;j&lt;bag_h;j+=1){
+bag_data[i,j]=0;
+}
+bag_data[0,0]=2
+tool_data[1]="HP+=MAX"
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

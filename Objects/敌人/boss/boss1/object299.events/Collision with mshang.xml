@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="mshang">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">nowhp-=0.2
+with(mshang.id)instance_destroy()
+if(nowhp=25){
+instance_create(x,y,object309)}
+if(nowhp&lt;=20&amp;&amp;nowhp&gt;16){
+instance_create(x,y,object309)
+repeat(3)instance_create(random(1280),random(720),object318)
+repeat(3)instance_create(random(1280),random(720),object319)}
+if(nowhp&lt;=16&amp;&amp;nowhp&gt;10){
+instance_create(x,y,object309)
+repeat(3)instance_create(random(1280),random(720),object318)
+repeat(3)instance_create(random(1280),random(720),object319)}
+if(nowhp=10){
+}
+
+if(nowhp &lt;= 0){
+sound_stop_all()
+with(object312)instance_destroy()
+with(object309)instance_destroy()
+with(object236)instance_destroy()
+instance_destroy()
+if(player.nowlv&lt;=5){
+player.nowexp+=60}
+if(player.nowlv&gt;5){
+player.nowexp+=60}
+player.alarm[2] = 1
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

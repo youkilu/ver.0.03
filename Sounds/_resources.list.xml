@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sound0" type="RESOURCE"/>
+  <resource name="sound4" type="RESOURCE"/>
+  <resource name="sound5" type="RESOURCE"/>
+  <resource name="sound6" type="RESOURCE"/>
+  <resource name="sound20" type="RESOURCE"/>
+  <resource name="bettle" type="GROUP"/>
+  <resource name="特效" type="GROUP"/>
+  <resource name="sound32" type="RESOURCE"/>
+  <resource name="gameover" type="GROUP"/>
+  <resource name="bgm" type="GROUP"/>
+  <resource name="dead" type="GROUP"/>
+</resources>

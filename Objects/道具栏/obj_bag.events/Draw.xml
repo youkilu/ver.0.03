@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="DRAW" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,c_white,1);
+if(!bag_on)exit;
+
+var i,j,bw,bh,sw,sh,bx,by,xn,yn;
+bw = 32
+bh = 32
+sw = 64
+sh = 32
+bx = 128
+by = 32
+draw_set_alpha(0.3);
+draw_rectangle(bx-sw,by-sh,bx+bag_w*(bw+sw),by+bag_h*(bh+sh),0);
+draw_set_alpha(1);
+draw_rectangle(bx-sw,by-sh,bx+bag_w*(bw+sw),by+bag_h*(bh+sh),1);
+for(i=0;i&lt;bag_w;i+=1)
+for(j=0;j&lt;bag_h;j+=1){
+xn=bx+i*(bw+sw);
+yn=by+j*(bh+sh);
+draw_sprite(spr_bag_bar,0,xn,yn);
+}
+for(i=0;i&lt;bag_w;i+=1)
+for(j=0;j&lt;bag_h;j+=1){
+xn=bx+i*(bw+sw);
+yn=by+j*(bh+sh);
+if(bag_data[i,j]&gt;0){
+draw_sprite(spr_bag_spr,bag_data[i,j]-1,xn,yn)
+if(mouse_x&gt;xn&amp;&amp;mouse_y&gt;yn&amp;&amp;mouse_x&lt;xn+bw&amp;&amp;mouse_y&lt;yn+bh)
+{draw_text_color(xn+bw,yn+bh,tool_data[bag_data[i,j]-1],c_white,c_white,c_white,c_white,1);
+}}}
+
+
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

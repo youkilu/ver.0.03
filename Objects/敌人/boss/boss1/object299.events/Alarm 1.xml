@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="1">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">instance_create(x,y,object310);
+object310.count += 1;
+if(object310.count &lt; 40){
+    alarm[1] = 5;
+}
+if(object310.count&gt;=40){
+alarm[1]=0
+alarm[0]=100
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

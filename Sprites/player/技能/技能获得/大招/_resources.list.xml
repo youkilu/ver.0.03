@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprite259" type="RESOURCE"/>
+  <resource name="sprite260" type="RESOURCE"/>
+  <resource name="大招二段" type="GROUP"/>
+</resources>

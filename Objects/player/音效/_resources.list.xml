@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="step1" type="RESOURCE"/>
+  <resource name="step4" type="RESOURCE"/>
+  <resource name="step3" type="RESOURCE"/>
+  <resource name="step2" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(player.nowHp&gt;0){
+if(player.nowdef&lt;20){
+player.nowHp-=player.nowHp}
+if(player.nowdef=20){
+player.nowHp-=10}
+if(player.nowdef=25){
+player.nowHp-=5}
+if(player.nowdef=30){
+player.nowHp-=2}
+if(player.nowdef&gt;30){
+player.nowHp-=0}
+if(player.nowHp&lt;=0){
+player.nowHp-=0}}
+
+if(player.nowHp&lt;=2&amp;&amp;player.nowdef=30){
+player.nowHp-=player.nowHp}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

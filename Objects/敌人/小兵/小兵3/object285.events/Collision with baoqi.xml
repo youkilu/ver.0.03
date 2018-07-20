@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="baoqi">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(!inv_time){
+inv_time = 1
+alarm[0] = 10
+if(player.nowsta=10){nowhp-=1}
+if(player.nowsta&gt;10&amp;&amp;player.nowsta&lt;=15){nowhp-=3}
+if(player.nowsta&gt;15&amp;&amp;player.nowsta&lt;=20){nowhp-=7}
+if(player.nowsta&gt;20){nowhp-=nowhp}
+if(nowhp = 0){
+with(object260)instance_destroy()
+instance_destroy()
+instance_create(x,y,object243)
+player.nowexp+=1.5
+player.alarm[2] = 1
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//壒妝傪柭傜偡
+/**
+徻偟偔偼丄Room偵攝抲偝傟偰偄傞playMusic傪
+Ctrl墴偟側偑傜塃僋儕僢僋傪偟偰
+乽CreationCode乿傪慖戰偟偰拞傪擿偄偰壓偝偄丅
+偦偙偱丄嵞惗偡傞Sound偑愰尵偝傟偰偄傑偡丅
+**/
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

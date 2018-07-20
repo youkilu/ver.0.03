@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">1</argument>
+        <argument kind="MENU">9</argument>
+      </arguments>
+    </action>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">10</argument>
+        <argument kind="MENU">7</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">image_speed = 0.2
+with(player)instance_destroy()
+with(object226)instance_destroy()
+with(object228)instance_destroy()
+with(object308)instance_destroy()
+with(object231)instance_destroy()
+with(object233)instance_destroy()
+with(object235)instance_destroy()
+instance_create(x,y,hpbar)
+instance_create(1312,-32,object287)
+instance_create(-32,-32,object288)
+instance_create(-32,1312,object289)
+instance_create(1312,1312,object290)
+instance_create(x,y,object291)
+instance_create(x,y,object328)
+instance_create(x,y,object292)
+instance_create(x,y,object293)
+instance_create(x,y,object294)
+instance_create(x-200,y,player)
+repeat(1)instance_create(x,y,object226)
+repeat(1)instance_create(x,y,object228)
+repeat(1)instance_create(x,y,object231)
+repeat(1)instance_create(x,y,object233)
+shadow_timer = 0
+shadow = 0
+m=0
+</argument>
+      </arguments>
+    </action>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">20</argument>
+        <argument kind="MENU">5</argument>
+      </arguments>
+    </action>
+    <action id="101" library="1">
+      <!--action name: Move-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_move</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">001000000</argument>
+        <argument kind="EXPRESSION">12</argument>
+      </arguments>
+    </action>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">1</argument>
+        <argument kind="MENU">6</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">sum = 0
+inv_time = 0
+maxHp = 25
+nowHp = maxHp
+xx[1] = random(1280)
+yy[1] = random(1280)
+xx[2] = random(1280)
+yy[2] = random(1280)
+xx[3] = random(1280)
+yy[3] = random(1280)
+xx[4] = random(1280)
+yy[4] = random(1280)
+xx[5] = random(1280)
+yy[5] = random(1280)
+xx[6] = random(1280)
+yy[6] = random(1280)
+xx[7] = random(1280)
+yy[7] = random(1280)
+xx[8] = random(1280)
+yy[8] = random(1280)
+xx[9] = random(1280)
+yy[9] = random(1280)
+xx[10] = random(1280)
+yy[10] = random(1280)
+xx[11] = random(1280)
+yy[11] = random(1280)
+xx[12] = random(1280)
+yy[12] = random(1280)
+xx[13] = random(1280)
+yy[13] = random(1280)
+xx[14] = random(1280)
+yy[14] = random(1280)
+xx[15] = random(1280)
+yy[15] = random(1280)
+xx[16] = random(1280)
+yy[16] = random(1280)
+xx[17] = random(1280)
+yy[17] = random(1280)
+xx[18] = random(1280)
+yy[18] = random(1280)
+xx[19] = random(1280)
+yy[19] = random(1280)
+xx[20] = random(1280)
+yy[20] = random(1280)
+xx[21] = random(1280)
+yy[21] = random(1280)
+xx[22] = random(1280)
+yy[22] = random(1280)
+xx[23] = random(1280)
+yy[23] = random(1280)
+xx[24] = random(1280)
+yy[24] = random(1280)
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

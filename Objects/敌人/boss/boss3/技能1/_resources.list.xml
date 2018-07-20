@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="mzuo1" type="RESOURCE"/>
+  <resource name="myou1" type="RESOURCE"/>
+  <resource name="mshang1" type="RESOURCE"/>
+  <resource name="mxia1" type="RESOURCE"/>
+  <resource name="mzuoshang1" type="RESOURCE"/>
+  <resource name="myouxia1" type="RESOURCE"/>
+  <resource name="myoushang1" type="RESOURCE"/>
+  <resource name="mzuoxia1" type="RESOURCE"/>
+</resources>

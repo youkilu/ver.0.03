@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="房子" type="GROUP"/>
+  <resource name="药水" type="GROUP"/>
+  <resource name="block" type="GROUP"/>
+  <resource name="地形" type="GROUP"/>
+  <resource name="植物" type="GROUP"/>
+</resources>

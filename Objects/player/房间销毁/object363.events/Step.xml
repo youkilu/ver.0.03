@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with(mzuo)instance_destroy()
+with(myou)instance_destroy()
+with(mshang)instance_destroy()
+with(mxia)instance_destroy()
+with(mzuoshang)instance_destroy()
+with(myouxia)instance_destroy()
+with(myoushang)instance_destroy()
+with(mzuoxia)instance_destroy()
+with(object350)instance_destroy()
+with(object169)instance_destroy()
+with(object170)instance_destroy()
+with(object171)instance_destroy()
+with(object172)instance_destroy()
+with(object173)instance_destroy()
+with(object174)instance_destroy()
+with(object175)instance_destroy()
+with(object176)instance_destroy()
+with(object186)instance_destroy()
+with(erduan)instance_destroy()
+with(object224)instance_destroy()
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

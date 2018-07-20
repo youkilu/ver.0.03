@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="4">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(nowhp&lt;=20&amp;&amp;nowhp&gt;10){
+instance_create(x,y,object317)
+alarm[0]=0
+alarm[1]=0
+}
+else if(nowhp&lt;=10&amp;&amp;nowhp&gt;0){
+with(object318)instance_destroy()
+with(object319)instance_destroy()
+n=18
+repeat(n)instance_create(random(1280),random(720),object314)
+alarm[0]=0
+alarm[1]=0
+alarm[5]=1
+}
+
+</argument>
+      </arguments>
+    </action>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">250</argument>
+        <argument kind="MENU">4</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

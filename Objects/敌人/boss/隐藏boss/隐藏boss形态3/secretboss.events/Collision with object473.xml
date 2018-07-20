@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="object473">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">with(object473.id)instance_create(x+32,y,object459)
+with(object473.id)instance_destroy()
+if(!inv_time){
+inv_time = 1
+alarm[0] = 50
+if(nowHp&gt;=2){nowHp-=1}
+else{nowHp-=0.5}
+while(sum&lt;=24 - nowHp){
+if(nowHp = 0)break
+inst = instance_create(xx[sum + 1],yy[sum + 1],object460);
+sum += 1
+switch(25 - sum)
+{
+case 24:
+ case 21:
+ case 19:
+ case 17:
+ case 15:
+ case 13:
+ case 11:
+ case 9:
+ case 7:
+ case 5:
+ case 3:
+ case 1:
+obj = instance_create(random(1280),random(1280),object470);
+ break;
+case 23:
+ case 22:
+ case 20:
+ case 18:
+ case 16:
+ case 14:
+ case 12:
+ case 10:
+ case 8:
+ case 6:
+ case 4:
+ case 2:
+obj = instance_create(random(1280),random(1280),object11);
+}
+with(obj)move_towards_point(other.inst.x,other.inst.y,0)}
+}
+else{nowHp+=1}
+if(nowHp &lt;= 0){
+sound_play(deadw)
+with(hpbar)instance_destroy()
+with(object7)instance_destroy()
+with(object8)instance_destroy()
+with(object10)instance_destroy()
+with(object11)instance_destroy()
+with(object12)instance_destroy()
+with(object13)instance_destroy()
+with(object14)instance_destroy()
+with(object17)instance_destroy()
+with(object18)instance_destroy()
+with(object445)instance_destroy()
+with(object470)instance_destroy()
+with(object460)instance_destroy()
+with(object462)instance_destroy()
+with(object469)instance_destroy()
+with(object31)instance_destroy()
+with(object14)instance_destroy()
+with(object17)instance_destroy()
+with(object18)instance_destroy()
+with(object445)instance_destroy()
+with(object461)instance_destroy()
+instance_destroy()
+}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

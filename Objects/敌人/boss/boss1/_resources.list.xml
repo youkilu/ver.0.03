@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="object299" type="RESOURCE"/>
+  <resource name="object314" type="RESOURCE"/>
+  <resource name="object317" type="RESOURCE"/>
+  <resource name="object315" type="RESOURCE"/>
+  <resource name="object300" type="RESOURCE"/>
+  <resource name="object301" type="RESOURCE"/>
+  <resource name="object367" type="RESOURCE"/>
+  <resource name="object366" type="RESOURCE"/>
+  <resource name="hpbar2a" type="RESOURCE"/>
+  <resource name="hpbar2d" type="RESOURCE"/>
+  <resource name="object309" type="RESOURCE"/>
+  <resource name="object358" type="RESOURCE"/>
+  <resource name="object310" type="RESOURCE"/>
+  <resource name="object316" type="RESOURCE"/>
+  <resource name="object311" type="RESOURCE"/>
+  <resource name="判定" type="GROUP"/>
+  <resource name="召唤" type="GROUP"/>
+  <resource name="object324" type="RESOURCE"/>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="CREATE" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">color_full = c_purple; //满血时血条颜色,c_lime为绿色
+color_empty = c_purple; //空血时血条颜色,c_red为红色,更多的颜色变量请参考自带帮助
+draw_x = 32; //血条的左上角横坐标
+draw_y = 8; //血条的左上角纵坐标
+width = 32*23; //血条宽度
+height = 16; //血条高度
+boss_obj = player; //boss所用obj的名称
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

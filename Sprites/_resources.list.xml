@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="player" type="GROUP"/>
+  <resource name="sprite43" type="RESOURCE"/>
+  <resource name="sprite62" type="RESOURCE"/>
+  <resource name="物体" type="GROUP"/>
+  <resource name="特效" type="GROUP"/>
+  <resource name="敌人" type="GROUP"/>
+  <resource name="道具栏" type="GROUP"/>
+</resources>

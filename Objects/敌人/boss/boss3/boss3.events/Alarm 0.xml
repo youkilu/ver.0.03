@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="ALARM" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">b+=1
+if(b&lt;=60){
+if(sprite_index=sprite453&amp;&amp;x&gt;player.x-64&amp;&amp;x&lt;player.x+64&amp;&amp;y&lt;=player.y)
+{instance_create(x,y-48,mxia1)}
+else if(sprite_index=sprite456&amp;&amp;x&gt;player.x-64&amp;&amp;x&lt;player.x+64&amp;&amp;y&gt;=player.y)
+{instance_create(x,y-48,mshang1)}
+else if(sprite_index=sprite454&amp;&amp;y&gt;player.y-64&amp;&amp;y&lt;player.y+64&amp;&amp;x&gt;=player.x)
+{instance_create(x,y-48,mzuo1)}
+else if(sprite_index=sprite454&amp;&amp;y&lt;player.y-64&amp;&amp;x&gt;=player.x+64)
+{instance_create(x,y-48,mzuoxia1)}
+else if(sprite_index=sprite454&amp;&amp;y&gt;player.y+64&amp;&amp;x&gt;=player.x+64)
+{instance_create(x,y-48,mzuoshang1)}
+else if(sprite_index=sprite455&amp;&amp;y&gt;player.y-64&amp;&amp;y&lt;player.y+64&amp;&amp;x&lt;=player.x)
+{instance_create(x,y-48,myou1)}
+else if(sprite_index=sprite455&amp;&amp;y&lt;player.y-64&amp;&amp;x&lt;=player.x-64)
+{instance_create(x,y-48,myouxia1)}
+else if(sprite_index=sprite455&amp;&amp;y&gt;player.y+64&amp;&amp;x&lt;=player.x-64)
+{instance_create(x,y-48,myoushang1)}
+else if(sprite_index=sprite457)
+{instance_create(x,y-48,mxia1)}
+else if(sprite_index=sprite460)
+{instance_create(x,y-48,mshang1)}
+else if(sprite_index=sprite458&amp;&amp;y&lt;player.y+64&amp;&amp;y&gt;player-64)
+{instance_create(x,y-48,mzuo1)}
+else if(sprite_index=sprite458&amp;&amp;y&gt;player.y+64)
+{instance_create(x,y-48,myoushang1)}
+else if(sprite_index=sprite458&amp;&amp;y&lt;player.y-64)
+{instance_create(x,y-48,myouxia1)}
+else if(sprite_index=sprite459&amp;&amp;y&lt;player.y+64&amp;&amp;y&gt;player-64)
+{instance_create(x,y-48,myou1)}
+else if(sprite_index=sprite459&amp;&amp;y&gt;player.y+64)
+{instance_create(x,y-48,mzuoshang1)}
+else if(sprite_index=sprite459&amp;&amp;y&gt;player.y+64)
+{instance_create(x,y-48,myouxia1)}}
+else{alarm[0]=0}
+</argument>
+      </arguments>
+    </action>
+    <action id="301" library="1">
+      <!--action name: Set_Alarm-->
+      <kind>NORMAL</kind>
+      <allowRelative>true</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>FUNCTION</actionType>
+      <functionName>action_set_alarm</functionName>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="EXPRESSION">5</argument>
+        <argument kind="MENU">0</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

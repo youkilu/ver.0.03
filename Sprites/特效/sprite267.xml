@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<sprite>
+  <origin x="74" y="117"/>
+  <mask>
+    <separate>false</separate>
+    <shape>DISK</shape>
+    <bounds alphaTolerance="0" mode="MANUAL">
+      <left>18</left>
+      <right>172</right>
+      <top>60</top>
+      <bottom>100</bottom>
+    </bounds>
+  </mask>
+  <preload>true</preload>
+  <smoothEdges>false</smoothEdges>
+  <transparent>false</transparent>
+</sprite>

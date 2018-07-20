@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprite103" type="RESOURCE"/>
+  <resource name="sprite154" type="RESOURCE"/>
+  <resource name="sprite104" type="RESOURCE"/>
+  <resource name="sprite229" type="RESOURCE"/>
+  <resource name="房梁" type="GROUP"/>
+  <resource name="sprite429" type="RESOURCE"/>
+</resources>

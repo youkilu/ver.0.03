@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="object232" type="RESOURCE"/>
+  <resource name="object233" type="RESOURCE"/>
+  <resource name="bpbar" type="RESOURCE"/>
+  <resource name="bpbard" type="RESOURCE"/>
+  <resource name="大招二段" type="GROUP"/>
+</resources>

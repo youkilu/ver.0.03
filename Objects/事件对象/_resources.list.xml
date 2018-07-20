@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="gms" type="GROUP"/>
+  <resource name="block" type="GROUP"/>
+  <resource name="parent" type="GROUP"/>
+  <resource name="其他" type="GROUP"/>
+  <resource name="特效" type="GROUP"/>
+  <resource name="道具" type="GROUP"/>
+  <resource name="效果事件" type="GROUP"/>
+  <resource name="植物" type="GROUP"/>
+</resources>

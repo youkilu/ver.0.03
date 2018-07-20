@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">//儖乕儉傪堏摦偡傞乮儚乕僾乯
+//onCollide偲偐roomTo偼巕Object乮倵arp偲偐乯偑帩偭偰傑偡
+if(onCollide == true){
+  room_goto(roomTo);
+}
+/**
+Room偵攝抲偝傟偰偄傞roomChanger傪
+Ctrl墴偟側偑傜塃僋儕僢僋傪偟偰
+乽CreationCode乿傪慖戰偟偰拞傪擿偄偰壓偝偄丅
+偦偙偱丄嵞惗偡傞堏摦偡傞愭偑愰尵偝傟偰偄傑偡丅
+**/
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

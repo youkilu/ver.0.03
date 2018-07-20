@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="room25" type="RESOURCE"/>
+  <resource name="room1" type="RESOURCE"/>
+  <resource name="room24" type="RESOURCE"/>
+  <resource name="room16" type="RESOURCE"/>
+  <resource name="room9" type="RESOURCE"/>
+  <resource name="room8" type="RESOURCE"/>
+  <resource name="房间" type="GROUP"/>
+  <resource name="boss" type="GROUP"/>
+</resources>

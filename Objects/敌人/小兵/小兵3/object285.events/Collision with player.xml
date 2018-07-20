@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="COLLISION" with="player">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if(player.nowdef = 10){player.nowHp-=4}
+if(player.nowdef&gt;10&amp;&amp;player.nowdef&lt;=15){player.nowHp-=0.5}
+if(player.nowdef&gt;15&amp;&amp;player.nowdef&lt;=20){player.nowHp-=0.1}
+if(player.nowdef&gt;20&amp;&amp;player.nowdef&lt;=25){player.nowHp-=0.01}
+if(player.nowdef&gt;20&amp;&amp;player.nowdef&lt;=400){player.nowHp-=0}
+if(sprite_index = sprite283){
+y=y-5
+sprite_index = sprite286
+direction+=180}
+else if(sprite_index = sprite286){
+y=y+5
+sprite_index = sprite283
+direction+=180}
+if(!inv_time){
+inv_time = 1
+alarm[0] = 20
+if(player.sprite_index = right2&amp;&amp;x&gt;player.x+32)
+{if(player.nowsta&gt;=15){nowhp-=0
+sound_play(pengz)}
+if(player.nowsta&gt;15&amp;&amp;player.nowsta&lt;=20){nowhp-=2
+sound_play(ks)}
+if(player.nowsta&gt;20&amp;&amp;player.nowsta&lt;=25){nowhp-=5
+sound_play(ks)}
+if(player.nowsta&gt;25){nowhp-=nowhp}}
+if(player.sprite_index = left2&amp;&amp;x&lt;player.x-32)
+{if(player.nowsta&gt;=15){nowhp-=0
+sound_play(pengz)}
+if(player.nowsta&gt;15&amp;&amp;player.nowsta&lt;=20){nowhp-=2
+sound_play(ks)}
+if(player.nowsta&gt;20&amp;&amp;player.nowsta&lt;=25){nowhp-=5
+sound_play(ks)}
+if(player.nowsta&gt;25){nowhp-=nowhp}}
+if(player.sprite_index = down2&amp;&amp;y+55&gt;=player.y-37)
+{if(player.nowsta&gt;=15){nowhp-=0
+sound_play(pengz)}
+if(player.nowsta&gt;15&amp;&amp;player.nowsta&lt;=20){nowhp-=2
+sound_play(ks)}
+if(player.nowsta&gt;20&amp;&amp;player.nowsta&lt;=25){nowhp-=5
+sound_play(ks)}
+if(player.nowsta&gt;25){nowhp-=nowhp}}
+if(player.sprite_index = up3&amp;&amp;y+55&gt;=player.y-37)
+{if(player.nowsta&gt;=15){nowhp-=0
+sound_play(pengz)}
+if(player.nowsta&gt;15&amp;&amp;player.nowsta&lt;=20){nowhp-=2
+sound_play(ks)}
+if(player.nowsta&gt;20&amp;&amp;player.nowsta&lt;=25){nowhp-=5
+sound_play(ks)}
+if(player.nowsta&gt;25){nowhp-=nowhp}}
+if(nowhp = 0){
+sound_play(shuj)
+with(object285)instance_destroy()
+instance_destroy()
+instance_create(x,y,object264)
+if(player.nowlv&lt;=3){
+player.nowexp+=1.5}
+if(player.nowlv&gt;3){
+player.nowexp+=0}
+player.alarm[2] = 1
+}}
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

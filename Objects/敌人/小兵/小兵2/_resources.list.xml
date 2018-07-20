@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="object256" type="RESOURCE"/>
+  <resource name="object258" type="RESOURCE"/>
+  <resource name="object264" type="RESOURCE"/>
+  <resource name="判定" type="GROUP"/>
+  <resource name="技能" type="GROUP"/>
+</resources>

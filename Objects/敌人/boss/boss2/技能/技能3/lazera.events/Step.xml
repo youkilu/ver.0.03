@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<event category="STEP" id="0">
+  <actions>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">depth=player.depth+1
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if can_create=true{
+    if instance_count&lt;=15{
+        alarm[0]=1;
+        can_create=false;
+        }
+    }
+if image_alpha&lt;=0{
+    instance_destroy();
+    }
+    
+</argument>
+      </arguments>
+    </action>
+    <action id="603" library="1">
+      <!--action name: Code-->
+      <kind>CODE</kind>
+      <allowRelative>false</allowRelative>
+      <question>false</question>
+      <canApplyTo>true</canApplyTo>
+      <actionType>CODE</actionType>
+      <functionName/>
+      <relative>false</relative>
+      <not>false</not>
+      <appliesTo>.self</appliesTo>
+      <arguments>
+        <argument kind="STRING">if can_change=0{
+    wobble+=.2;//this increases the width of the beam
+    can_change=1;
+    image_alpha-=.04;//this makes the beam fade out
+    exit
+    }
+if can_change=1{
+    wobble-=.2;//this shrinks the width of the beam, thus making it wobble or shake
+    can_change=0;
+    image_alpha-=.04;//if this were positive it might make the beam flash
+    exit
+    }
+
+</argument>
+      </arguments>
+    </action>
+  </actions>
+</event>

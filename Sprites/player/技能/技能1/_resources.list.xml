@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+  <resource name="sprite220" type="RESOURCE"/>
+  <resource name="sprite225" type="RESOURCE"/>
+  <resource name="sprite480" type="RESOURCE"/>
+  <resource name="sprite481" type="RESOURCE"/>
+  <resource name="sprite482" type="RESOURCE"/>
+  <resource name="sprite483" type="RESOURCE"/>
+  <resource name="sprite484" type="RESOURCE"/>
+  <resource name="sprite485" type="RESOURCE"/>
+  <resource name="sprite486" type="RESOURCE"/>
+  <resource name="sprite487" type="RESOURCE"/>
+  <resource name="技能1改" type="GROUP"/>
+</resources>
